@@ -46,9 +46,12 @@ class Modbus
 {
     protected $modbus = '';
     protected $host = '';
+    protected  $type = '';
     public function __construct()
     {
-        $this->modbus =  new ModbusMasterTcp(config('modbus.default.host'));
+        $this->host= config('modbus.default.host');
+        $this->type= config('modbus.default.type');
+        $this->modbus =  new ModbusMasterTcp($this->host,$this->type);
     }
 
     /**

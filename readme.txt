@@ -1,3 +1,4 @@
+
 将vendor/hanguosoft/modbus/config目录下的modbus.php 文件复制到项目config目录下并配置好
  * FC 1: read coils                         readCoils($unitId = 0 ,$reference = 12288 ,$quantity = 12) 读取线圈
  * FC 2: read input discretes               readInputDiscretes($unitId = 0 ,$reference = 12288 ,$quantity = 2)   读取输入分立器件
