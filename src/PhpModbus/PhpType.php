@@ -13,7 +13,7 @@
  * @version $id$
  *
  */
-namespace App\Libs\PhpModbus;
+namespace HanGuoSoft\Modbus;
 
 /**
  * PhpType
@@ -26,6 +26,8 @@ namespace App\Libs\PhpModbus;
  * @package Phpmodbus
  *
  */
+use Exception;
+
 class PhpType {
 
     /**

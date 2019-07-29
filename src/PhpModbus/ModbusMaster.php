@@ -14,7 +14,7 @@
  * @version $id$
  *  
  */
-namespace App\Libs\PhpModbus;
+namespace HanGuoSoft\Modbus;
 
 //require_once dirname(__FILE__) . '/IecType.php';
 //require_once dirname(__FILE__) . '/PhpType.php';
@@ -42,9 +42,11 @@ namespace App\Libs\PhpModbus;
  * @package Phpmodbus  
  *
  */
+use Exception;
+
 class ModbusMaster {
   private $sock;
-  public $host = "192.168.1.1";
+  public $host = "192.168.2.10";
   public $port = "502";  
   public $client = "";
   public $client_port = "502";

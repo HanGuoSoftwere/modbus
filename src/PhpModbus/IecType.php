@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Libs\PhpModbus;
+namespace HanGuoSoft\Modbus;
 /**
  * Phpmodbus Copyright (c) 2004, 2013 Jan Krakora
  *
@@ -25,7 +25,7 @@ namespace App\Libs\PhpModbus;
  * @copyright  Copyright (c) 2004, 2010 Jan Krakora
  * @package Phpmodbus
  */
-class IecType {
+class iecType {
 
     /**
      * iecBYTE

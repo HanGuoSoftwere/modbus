@@ -14,7 +14,7 @@
  * @version $id$
  *  
  */
-namespace App\Libs\PhpModbus;
+namespace HanGuoSoft\Modbus;
 
 //require_once dirname(__FILE__) . '/ModbusMaster.php';
 

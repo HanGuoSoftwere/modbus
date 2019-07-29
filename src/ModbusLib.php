@@ -6,7 +6,7 @@
  * Time: 9:53
  */
 
-namespace Hanguosoft\Modbus;
+namespace HanGuoSoft\Modbus;
 
 
 /**
@@ -42,11 +42,9 @@ namespace Hanguosoft\Modbus;
  * bool writeSingleRegister (int $unitId, int $reference, array $data, array $dataTypes)
  * void __toString ()
  */
-class Modbus
+class ModbusLib
 {
-    protected $modbus = '';
-    protected $host = '';
-    protected  $type = '';
+
     public function __construct()
     {
         $this->host= config('modbus.default.host');
