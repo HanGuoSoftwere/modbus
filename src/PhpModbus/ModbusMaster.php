@@ -53,7 +53,7 @@ class ModbusMaster {
   public $status;
   public $timeout_sec = 5; // Timeout 5 sec
   public $endianness = 0; // Endianness codding (little endian == 0, big endian == 1) 
-  public $socket_protocol = "UDP"; // Socket protocol (TCP, UDP)
+  public $socket_protocol = "TCP"; // Socket protocol (TCP, UDP)
   
   /**
    * ModbusMaster
@@ -452,7 +452,11 @@ class ModbusMaster {
     $this->disconnect();
     $this->status .= "readMultipleRegisters: DONE\n";
     // return
-    return $receivedData;
+    return $this->res_result($rpacket);
+  }
+
+  public function res_result($result){
+    return  substr($this->printPacket($result),26);
   }
   
   /**
